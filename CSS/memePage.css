@@ -1,0 +1,47 @@
+.memePageContainer{
+    width: 100%;
+    min-height: 90vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.memePageBox{
+    width: 60%;
+    height: 500px;
+    min-height: 45vh;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid red 5px;
+    gap: 3rem;
+}
+.memePageBox img{
+    width: 50%;
+    height: 50%;
+}
+.memePageBox button{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: red;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.memePageBox button:hover{
+    background-color: white;
+    border: solid red 3px;
+    color: black;
+}
+
+@media (max-width: 800px){
+    .memePageBox{
+        width: 90%;
+    }
+}

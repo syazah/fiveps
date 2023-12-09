@@ -1,0 +1,345 @@
+.aboutHeader{
+    width: 100%;
+    min-height: 60vh;
+    padding: 5rem;
+    display: flex;
+    background-image: url('../ASSETS/EASTERN\ MARKETING.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aboutTextHeader{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+.aboutTextHeader a{
+    background-color: #FF7628;
+    color: white;
+    width: 200px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: solid black 3px;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.aboutHeader h1 span{
+    color: #FF7628;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.aboutImgHeader{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutImgHeader img{
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    cursor: pointer;
+}
+.aboutImgHeader img:hover{
+    width: 250px;
+    height: 250px;
+}
+@media (max-width:800px){
+    .aboutHeader{
+        padding: 2rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .aboutTextHeader{
+        width: 100%;
+    }
+    .aboutImgHeader{
+        width: 100%;
+    }
+}
+/* overview  */
+.aboutOverview{
+    display: flex;
+    background-color: #212121;
+    width: 100%;
+    padding: 3rem 5rem;
+}
+.aboutOverviewText{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+}
+.aboutOverviewText>p{
+    font-size: 0.8rem;
+}
+@media (max-width:800px) {
+    .aboutOverview{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .aboutOverviewText{
+        width: 100%;
+    }
+    .overviewImg img{
+        width: 200px;
+        height: 200px;
+    }
+    .overviewImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* page2cards */
+.aboutPage2{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    padding: 5rem;
+    justify-content: space-evenly;
+}
+.aboutP2Card{
+    background-color: #212121;
+    color: white;
+    padding: 2rem;
+    width: 40%;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+@media (max-width: 800px){
+    .aboutPage2{
+        flex-direction: column;
+        gap: 20px;
+        padding: 1rem;
+    }
+    .aboutP2Card{
+        width: 100%;
+    }
+}
+
+/* page3 */
+.aboutPage3{
+    width: 100%;
+    min-height: 30vw;
+    padding: 5rem;
+    background-color: #212121;
+    color: white;
+    display: flex;
+}
+.aboutPage3Selectors{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    color: white;
+    border-bottom: white solid 1px;
+}
+.aboutTextPage3{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.aboutSelectorsActive{
+    border-bottom: solid black 1px;
+}
+.aboutSelectors::before{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.workImg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workImg img{
+    width: 200px;
+    height: 200px;
+}
+
+.aboutSelectorsActive::before{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #FF7628;
+    color: #FF7628;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media (max-width:800px){
+    .aboutPage3{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .aboutTextPage3{
+        width: 100%;
+    }
+    .aboutSelectors{
+        font-size: 2vw;
+    }
+}
+
+/* FOUNDERS TALK  */
+.aboutUs-Card-Section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.aboutUsCard{
+    width: 33%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffebe2;
+    gap: 2rem ;
+}
+.aboutUsCard p{
+    height: 300px;
+    text-align: justify;
+}
+
+@media (max-width:800px) {
+    .aboutUs-Card-Section{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .aboutUsCard{
+        width: 100%;
+        gap: 0rem;
+    }
+    .aboutUsCard p{
+        height: 200px;
+        text-align: justify;
+    }
+}
+
+
+/* OPEN POSITIONS  */
+.openPositions{
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    color: white;
+    gap: 2rem;
+}
+
+.openPositionsRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.openPositionCard{
+    width: 30%;
+    height: 300px;
+    border: #FF7628 solid 3px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    gap: 1rem;
+}
+.openPositionCard:hover{
+    background-color: #FF7628;
+}
+.openPositionCard a{
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7628;
+    color: white;
+    border: solid white 2px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.openPositionCard a:hover{
+    color: #FF7628;
+    background-color: white;
+}
+.openPositionCard h3{
+    text-decoration: underline;
+    text-decoration-color: #FF7628;
+    -moz-text-decoration-color: #FF7628;
+}
+
+@media (max-width:800px){
+    .openPositions{
+        padding: 1rem;
+    }
+    .openPositionsRow{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .openPositionCard{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
